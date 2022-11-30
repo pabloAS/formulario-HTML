@@ -1,7 +1,7 @@
 const form = document.getElementById("form");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
-const password = document.getElementById("password");
+
 const textDescrip = document.getElementById("textCampo");
 
 const Submit = form.addEventListener("submit", (e) => {
@@ -14,7 +14,6 @@ const Submit = form.addEventListener("submit", (e) => {
 function checkInputs() {
   const usernameValue = username.value;
   const emailValue = email.value;
-  /* const passwordValue = password.value; */
   const textDescripValue = textDescrip.value;
 
   if (usernameValue === "") {
@@ -36,13 +35,6 @@ function checkInputs() {
   } else {
     setSuccessFor(textDescrip);
   }
-  /*  if (passwordValue === "") {
-    setErrorFor(password, "A senha é obrigatoria");
-  } else if (passwordValue.length < 7) {
-    setErrorFor(password, " Tem que ter no minimo 7 digitos");
-  } else {
-    setSuccessFor(password);
-  } */
 
   const formControls = form.querySelectorAll(".form-control");
 
